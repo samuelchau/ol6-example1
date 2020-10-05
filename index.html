@@ -12,6 +12,17 @@
   </head>
   <body>
     <div id="map"></div>
-    <script src="./index.js"></script>
+    <form class="form-inline">
+      <label>Click to list all features &nbsp;</label>
+      <button id="listButton" onClick="onClick()" type="button">List features</button> 
+      <label>Geometry type &nbsp;</label>
+      <select id="type">
+        <option value="Point">Point</option>
+        <option value="LineString">LineString</option>
+        <option value="Polygon">Polygon</option>
+        <option value="Circle">Circle</option>
+      </select>
+    </form>
+    <script src="./main.js"></script>
   </body>
 </html>
